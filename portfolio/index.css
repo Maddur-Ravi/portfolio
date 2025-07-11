@@ -1,9 +1,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-*{
-    margin: 0;
-    padding: 0;
+*s{
+  padding: 0;
+  margin: 0;
 }
 html {
     font-size: 62.5%;
@@ -28,11 +28,11 @@ a:hover {
     display: flex;
     align-items: center;
     height: 7rem;
-    padding: 0rem 5rem;
+    padding: 0rem 7rem;
 }
 .logo {
     width: 40%;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 600;
     color: darkorange;
 }
@@ -63,6 +63,11 @@ a:hover {
     height: 40rem;
     border-radius: 50%;
 }
+.sec-1-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .sec1-2-1 {
     font-weight: 900;
     font-size: 1.5rem;
@@ -78,4 +83,119 @@ h1 {
 p {
     font-size: 1.8rem;
     width: 90%;
+}
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+.buttons > :nth-child(1) {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0.2rem solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.buttons > :nth-child(1):hover {
+    background-color: black;
+    color: white;
+    
+}
+.buttons > :nth-child(2) {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0.2rem solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.buttons > :nth-child(2):hover {
+    background-color: darkorange;
+    border-color: darkorange;
+
+}
+.social {
+    display: flex;
+    gap: 2rem;
+}
+.social img {
+    width: 3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social img:hover{
+    transform: scale(0.9);
+}
+
+
+        /* SECTION 2 */
+
+.sec2 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sec-2-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-2-1 > :nth-child(1) {
+    font-weight: 600;
+}
+.sec-2-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    padding-bottom: 15rem;
+    gap: 6rem;
+}
+.sec-2-2-1 {
+    margin-left: 10rem;
+}
+.sec-2-2-1 img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+.sec-2-2-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.sec-2-2-2-1 {
+    display: flex;
+    gap: 5rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2rem solid black;
+    width: 30rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 0.5rem;
+}
+.box img {
+    width: 3.5rem;
+}
+.box >:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+.box >:nth-child(3),.box >:nth-child(4) {
+    font-size: 1.7rem;
+}
+.p1{
+    width: 80%;
+
 }
