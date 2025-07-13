@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  background-color: #444;
+
 }
 ul li a{
     text-decoration: none;
@@ -40,6 +40,7 @@ ul li:hover a::before {
     align-items: center;
     height: 7rem;
     padding: 0rem 3rem;
+    background-color: darkgrey;
 }
 .logo {
     width: 40%;
@@ -64,6 +65,7 @@ ul li:hover a::before {
     align-items: center;
     height: 90vh;
     gap:6rem;
+
 }   
 .sec-1-1 {
     margin-left: 5rem;
@@ -148,11 +150,12 @@ p {
         /* SECTION 2 */
 
 .sec2 {
-    height: 80vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: lawngreen;
+    padding: 7rem 0px;
 }
 .sec-2-1 {
     display: flex;
@@ -161,12 +164,13 @@ p {
 }
 .sec-2-1 > :nth-child(1) {
     font-weight: 600;
+    font-size: 1.5rem;
 }
 .sec-2-2 {
     display: flex;
     align-items: center;
-    margin-top: 10rem;
-    padding-bottom: 15rem;
+    margin-top: 5rem;
+    padding-bottom: 0rem;
     gap: 6rem;
 }
 .sec-2-2-1 {
@@ -218,15 +222,20 @@ p {
 
 .sec-3 {
     background-color: aqua;
-    padding: 20rem 0px;;
+    padding: 10rem 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 7rem;
 }
 .sec-3-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.sec-3-1 > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .sec-3-2 {
    display: flex;
@@ -238,11 +247,67 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 14px;
+    padding: 2rem;
+    gap: 1.5rem;
 }
 .box3 img {
     width: 30rem;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 } 
+.box3-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.box3-2 > :nth-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+}
 
+
+   /*  SECTION 4*/
+
+
+.sec4{
+    display: flex;
+    flex-direction: column;
+    background-color: cornsilk;
+    height: 90%;
+    gap: 6rem;
+    padding: 10rem 0px;
+}   
+.sec4-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec4-1 > :nth-child(1) {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.sec4-2{
+    display: flex;
+    align-items: center;
+}
+.box4 {
+    width: 35rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    padding: 2rem;
+    gap: 50rem;
+}
+.box4 img {
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    border-radius: 14px;
+}
 
    /* footer  */
 
