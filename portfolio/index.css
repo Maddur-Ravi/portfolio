@@ -1,569 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-  padding: 0;
-    margin : 0;
-    box-sizing:border-box;
-}
-
-html {
-    font-size: 62.5%;
-   
-}
-body {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-
-}
-ul li a{
-    text-decoration: none;
-    color:black;
-    transition: all 0.3s ease;
-    position: relative;
-;
-}
-ul li a::before {
-   content: '';
-   width: 0;
-   height: 0.4rem;
-   background-color: darkorange;
-   position: absolute;
-   left: 0rem;
-   bottom: -0.6rem;
-   transition: 0.5s;
-}
-ul li:hover a::before {
-    width: 100%;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    height: 7rem;
-    padding: 0rem 3rem;
-    background-color: darkgrey;
-}
-.logo {
-    width: 40%;
-    font-size: 4rem;
-    font-weight: 600;
-    color: darkorange;
-}
-.menu-bar {
-    display: flex;
-    list-style: none;
-    width: 60%;
-    justify-content: space-around;
-}
-.menu-bar li{
-    font-size: 2rem;
-}
-.navbar-menu{
-    display: none;
-}
-@media(max-width: 767px) {
-    .navbar{
-        display: none;
-    }
-    .navbar-menu{
-        display: flex;
-    }
-}
-
-
-       /* section 1 */
-
-.sec1 {
-    display: flex;
-    align-items: center;
-    height: 90vh;
-    gap:6rem;
-
-}   
-.sec-1-1 {
-    margin-left: 5rem;
-}    
-
-.sec-1-1 img {
-    width:40rem;
-    height: 40rem;
-    border-radius: 50%;
-}
-.sec-1-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-.sec1-2-1 {
-    font-weight: 900;
-    font-size: 1.5rem;
-}
-h1 {
-    font-size: 5rem;
-    color: darkorange;
-}
-.sec1-2-3 {
-    font-weight: 800;
-    font-size: 2.2rem;
-}
-p {
-    font-size: 1.8rem;
-    width: 90%;
-}
-.buttons{
-    display: flex;
-    gap: 2rem;
-}
-.buttons > :nth-child(1) {
-    padding: 1rem 2rem;
-    background-color: transparent;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border: 0.2rem solid black;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.buttons > :nth-child(1):hover {
-    background-color: black;
-    color: white;
-    transform: translatey(-0.3rem);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
     
-}
-.buttons > :nth-child(2) {
-    padding: 1rem 2rem;
-    background-color: black;
-    color: white;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border: 0.2rem solid black;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.buttons > :nth-child(2):hover {
-    background-color: darkorange;
-    border-color: darkorange;
-    transform: translatey(-0.3rem);
-}
-.social {
-    display: flex;
-    gap: 2rem;
-}
-.social img {
-    width: 3rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.social img:hover{
-    transform: scale(0.9);
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-
-        /* SECTION 2 */
-
-.sec2 {
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lawngreen;
-    padding: 7rem 0px;
-}
-@media(max-width:52.1875) {
-    .sec2 {
-        flex-direction: row;
-    }
-    .sec-2-1 {
-        flex-direction: column;
-    }
-    .sec-2-2 {
-        flex-direction: column;
-    }
-}
-.sec-2-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec-2-1 > :nth-child(1) {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-.sec-2-2 {
-    display: flex;
-    align-items: center;
-    margin-top: 5rem;
-    padding-bottom: 0rem;
-    gap: 6rem;
-}
-.sec-2-2-1 {
-    margin-left: 10rem;
-}
-.sec-2-2-1 img {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-}
-.sec-2-2-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.sec-2-2-2-1 {
-    display: flex;
-    gap: 5rem;
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.2rem solid black;
-    width: 30rem;
-    border-radius: 2rem;
-    padding: 2rem;
-    gap: 0.5rem;
-}
-
-.box img {
-    width: 3.5rem;
-}
-.box >:nth-child(2) {
-    font-size: 2rem;
-    font-weight: 600;
-
-}
-.box >:nth-child(3),.box >:nth-child(4) {
-    font-size: 1.7rem;
-}
-.p1{
-    width: 80%;
-
-}
-
-/* media for phone */
-
-@media(max-width: 767px) {
-    .sec2{
-        height: 100%;
-    }
-    .sec-2-2 {
-    flex-direction: column;
-    }
-   .sec-2-2-1 img {
-    width: 25rem;
-    height: 25rem;
-}
-    .sec-2-2-1 {
-    margin-left: 0;
-}   
-    .sec-2-2-2 {
-     align-items: center;
-    }
-
-    .sec-2-2-2-1 {
-    flex-direction: column;
-    }
-}
-
-/*media for tab*/
-
-
-@media(max-width: 1024px) {
-    .sec2{
-        height: 100%;
-    }
-    .sec-2-2 {
-    flex-direction: column;
-    }
-
-    .sec-2-2-1 {
-    margin-left: 0;
-}   
-    .sec-2-2-2 {
-     align-items: center;
-    }
-}
-
-
-
-/* section 3*/
-
-
-.sec-3 {
-    background-color: aqua;
-    padding: 10rem 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6rem;
-}
-@media(max-width:52.1875rem) {
-    .sec-3 {
-        flex-direction: column;
-    }
-}
-.sec-3-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec-3-1 > :nth-child(1) {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.sec-3-2 {
-   display: flex;
-   gap:5rem;
-}
-@media(max-width:52.1875rem) {
-    .sec-3-2 {
-        flex-direction: column;
-    }
-}
-.box3 {
-    width: 35rem;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 14px;
-    padding: 2rem;
-    gap: 1.5rem;
-}
-
-.box3 img {
-    width: 30rem;
-    border-radius: 14px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} 
-.box3-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
-.box3-2 > :nth-child(1) {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-/*media for phone*/
-
-
-
-@media(max-width:767px) {
-    .sec-3{
-        flex-direction: column;
-    }
-  .sec-3-2 {
-      flex-direction: column;
-      gap: 2rem;
-    }  
-    .box3 {
-      width: 25rem;
-    }  
-    .box3 img {
-      width: 20rem;
-    } 
-    .box3-2 > :nth-child(1) {
-      font-size: 1.5rem; 
-    }  
-
-}
-
-
-/*media for tab*/
-
-
-
-@media(max-width:1024px) {
-    .sec-3-2{
-        flex-direction: column;
-    }
-    .box3 {
-    width: 50rem;
-    gap: 2rem;
-}
-
-.box3 img {
-    width: 45rem;
-} 
-.box3-2 > :nth-child(1) {
-    font-size: 3rem;
-}
-
-
-   /*  SECTION 4*/
-
-
-.sec4{
-    display: flex;
-    flex-direction: column;
-    background-color: cornsilk;
-    height: 90%;
-    gap: 6rem;
-    padding: 10rem 0px;
-}   
 
  
-.sec4-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sec4-1 > :nth-child(1) {
-    font-size: 1.7rem;
-    font-weight: 600;
-}
-
-.sec4-2{
-    display: flex;
-    align-items: center;
-}
-
-.box4 {
-    width: 35rem;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 14px;
-    padding: 2rem;
-    gap: 50rem;
-}
-
-.box4 img {
-    width: 30rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
-    border-radius: 14px;
-}
-
-
- /* media for phone */
-
-@media(max-width:767px) {
-    .sec4{
-        flex-direction: column;
-    }
-    .sec4-2{
-        flex-direction:column;
-        gap: 2rem;
-    }
-    .box4 img {
-        width: 20rem;
-    }
-    .box4 {
-    width: 25rem;
-    padding: 1rem;
-    }
-    .sec4-1{
-    flex-direction: column;
-    }
-    h1 {
-    font-size: 4rem;
-    }
-}
+         <!-- NAVIGATION BAR  -->
 
 
 
- /* media for tab */
+    <nav class="navbar">
+        <div class="logo">MADDUR RAVI</div>
+         <ul class="menu-bar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+         </ul>  
+    </nav>
 
-@media(max-width: 1024px) {
-    .sec4{
-        flex-direction: column;
-    }
-    .sec4-2{
-        flex-direction:column;
-        gap: 4rem;
-    }
-    .box4 img {
-        width: 40rem;
-    }
-    .box4 {
-    width: 50rem;
-    padding: 3rem;
-    }
-
-}
+    <nav class="navbar-menu">
+        <div class="logo">
+            MADDUR RAVI
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+        </div>
+         <ul class="menu-bar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+         </ul>  
+    </nav>
 
 
 
 
-   /* footer  */
+
+                <!-- SECTION 1-->
 
 
 
-.footer{
-    background-color: #111;
-    color: white;
-    height: 30;
-    Padding: 3rem;
-}
+    <section class="sec1">
+        <div class="sec-1-1">
+            <img src="assets/sung.jpg" alt="ravi img">
+        </div>
+        <div class="sec-1-2">
+            <span class="sec1-2-1">Hello I'm</span>
+            <h1>Maddur Ravi</h1>
+            <span class="sec1-2-3">Frontend Developer</span>
+            <p>Hi, I'm Ravi, a passionate Frontend Developer with a knack for creating 
+                intuitive and visually appealing web experiences. With a strong foundation 
+                in HTML, CSS, and JavaScript, I specialize in crafting responsive, 
+                user-centric interfaces that bring designs to life.
 
-.footer-container {
-    max-width: 120rem;
-    width: 92%;
-    margin:auto;
-}
+                I am constantly learning and experimenting with new web technologies, 
+                striving to stay up-to-date with the latest trends in frontend development. 
+            </p>
+            <div class="buttons">
+                <button>Download CV</button><button>Contact Info</button>
+            </div>
+            <div class="social">
+                <img src="assets/linkedin.png" alt="linkdin">
+                <img src="assets/github.png" alt="github">
 
-.foot-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 6rem 0rem;
-}
-@media(max-width:52.1875rem) {
-    .foot-info{
-        flex-direction:column;
-    }
-}
-.author{
-    max-width: 50rem;
-}
-
-.author-1{
-    font-size: 1.5rem;
-    line-height: 1.7;
-    letter-spacing: 0.1rem;
-}
-.author-2{
-    font-size: 1.5rem;
-    line-height: 1.7;
-    margin-top: 2rem;
-}
+            </div>
+        </div>
 
 
-.social-footer {
-    margin-bottom: 5rem;
-    order: 1;
 
-}
-@media(max-width: 800PX) {
-     .social-footer{
-        order: -1;
-     }
-}
+                        <!--SECTION   2-->
 
-.social-heading {
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
-.social-imgs {
-    width: 2.5rem;
-    margin-right: 1rem;
-    background-color: white;
-    border-radius: 50%;
-}
-.copyright {
-    text-align: center;
-    font-size: 1.2rem;
-    border-top: 1px solid #444;
-    padding: 4rem 0;
-}
-@media(max-width:767px) {
-    .copyright {
-        font-size: 1rem;
-    }
 
-}
+
+    </section> 
+    <section class="sec2">
+        <div class="sec-2-1">
+            <span>Get to know more</span>
+            <h1>About me</h1>
+        </div>
+        <div class="sec-2-2">
+            <div class="sec-2-2-1">
+                <img src="assets/sung.jpg">
+            </div>
+            <div class="sec-2-2-2">
+                <div class="sec-2-2-2-1">
+                    <div class="box">
+                        <img src="assets/experience.png">
+                        <span>Experience</span>
+                        <span>2+ Years</span>
+                        <span>Fropntend Developer</span>
+                    </div>
+                    <div class="box">
+                        <img src="assets/education.png">
+                        <span>Education</span>
+                        <span>BSC Bachelors Degree</span>
+                        <span>MSCs(Maths,statistics,Cs)</span>
+                    </div>
+                </div>
+                <p class="p1">
+                    Hello, my name is Ravi. I recently graduated with a Bachelor of Science degree in Mathematics, 
+                    Statistics, and Computer Science (BSc MSCS). During my studies, I developed a strong foundation 
+                    in analytical thinking, data interpretation, and programming. I have hands-on experience with languages 
+                    like Python, Java, and SQL, and I've worked on academic projects involving data analysis and 
+                    software development.
+
+                   I'm passionate about using technology to solve real-world problems and continuously improving my skills. 
+                   I'm now looking for opportunities where I can apply my knowledge, contribute to innovative projects, 
+                   and grow as a professional in the tech industry.
+
+                </p>
+            </div>
+        </div>
+
+    </section> 
+
+
+        <!--SECTION 3-->
+
+
+
+    <section class="sec-3">
+        <div class="sec-3-1">
+            <span>Browse My Recent</span>
+            <h1>Projects</h1>
+        </div>
+        <div class="sec-3-2">
+             <div class="box3">
+                <img src="assets/project1.jpg">
+                <div class="box3-2">
+                    <span>Responsive AppVilla</span>
+                    <div class="buttons">
+                        <button>GitHub</button>
+                        <button>Live Demo</button>
+                    </div>
+                </div>
+             </div>
+            <div class="box3">
+                <img src="assets/project2.jpg">
+                <div class="box3-2">
+                    <span>Responsive AppVilla</span>
+                    <div class="buttons">
+                        <button>GitHub</button>
+                        <button>Live Demo</button>
+                    </div>
+                </div>
+             </div>
+             <div class="box3">
+                <img src="assets/project3.jpg">
+                <div class="box3-2">
+                    <span>Responsive AppVilla</span>
+                    <div class="buttons">
+                        <button>GitHub</button>
+                        <button>Live Demo</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+     </div>
+
+    </section>
+
+
+
+    <!-- SECTION 4 -->
+
+
+
+    <section class="sec4">
+        <div  class="sec4-1">
+            <span>See My </span>
+            <h1>Tchnnical Skills</h1>
+        </div>
+        <div class="sec4-2">
+            <div class="box4">
+                <img src="assets/html.png">
+            </div>
+            <div class="box4">
+                <img src="assets/css.png">
+            </div>
+            <div class="box4">
+                <img src="assets/js.png">
+            </div>
+        </div>
+        </div>
+
+    </section>
+    
+    
+
+
+
+
+       <!--FOOTER SECTION-->
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="foot-info">
+                <div class="author">
+                <h3 class="author-1">MADDUR RAVI</h3>
+                <p class="author-2">
+                    I'm passionate about using technology to solve real-world problems and
+                    continuously improving my skills. I'm now looking for opportunities
+                    where I can impove my .
+                </p>
+                </div>
+                <div class="social-footer">
+                    <h3 class="social-heading">SOCIAL</h3>
+                    <img src="assets/linkedin.png" class="social-imgs">
+                    <img src="assets/github.png" class="social-imgs">
+                    <img src="assets/email.png" class="social-imgs">
+                </div>           
+            </div>
+                <div class="copyright">
+                     <P>
+                        Copyright 2025. Made By 
+                        <span CLASS="underline">MADDUR RAVI</span>
+                     </P>
+                </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
+
+</body>
+</html>
