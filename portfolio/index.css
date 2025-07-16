@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
    
 }
 body {
@@ -39,9 +40,12 @@ ul li:hover a::before {
 .navbar {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
     height: 7rem;
     padding: 0rem 3rem;
-    background-color: darkgrey;
+    background-color: bisque;
 }
 .logo {
     width: 40%;
@@ -62,7 +66,9 @@ ul li:hover a::before {
 .navbar-menu{
     display: none;
 }
-
+.N{
+    background-color: beige;
+}
 
 
 
@@ -122,9 +128,14 @@ ul li:hover a::before {
 
 
 @media(max-width:767px) {
+    .N{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     .logo{
         text-wrap: nowrap;
-        margin-top: 25px;
+        margin-top: 2px;
         font-size: 3rem;
         padding-left: 1rem;
     }
@@ -138,8 +149,9 @@ ul li:hover a::before {
 .sec1 {
     display: flex;
     align-items: center;
-    height: 100;
-    margin-top: 10rem;
+    height: 100%;
+    padding-top: 20rem;
+    padding-bottom: 18rem;
     gap:6rem;
 
 }   
@@ -276,8 +288,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7rem 0px;
-    margin-top: 10rem;
+    padding: 10rem 0rem;
 }
 @media(max-width:52.1875rem) {
     .sec2 {
@@ -407,9 +418,11 @@ p {
 
 
 .sec-3 {
+    padding-top: 2rem;
     padding: 10rem 0px;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     gap: 6rem;
 }
@@ -679,4 +692,4 @@ p {
     font-size: 1.2rem;
     border-top: 1px solid #444;
     padding: 4rem 0;
-}
+} 
