@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    
 
 
  
@@ -27,12 +27,8 @@
     </nav>
 
     <nav class="navbar-menu">
-        <div class="logo">
-            MADDUR RAVI
-        </div>
-        <div class="hamburger">
-            <i class="fa-solid fa-bars" style="color: #000000;"></i>
-        </div>
+        <div class="logo">MADDUR RAVI</div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
          <ul class="menu-bar">
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
@@ -40,8 +36,6 @@
             <li><a href="#">CONTACT</a></li>
          </ul>  
     </nav>
-
-
 
 
 
@@ -178,7 +172,7 @@
     <section class="sec4">
         <div  class="sec4-1">
             <span>See My </span>
-            <h1>Tchnnical Skills</h1>
+            <h1>Technical Skills</h1>
         </div>
         <div class="sec4-2">
             <div class="box4">
@@ -233,8 +227,17 @@
         </div>
     </footer>
 
-    </body>
-    </html>
+
+    <script>
+        const hamburger=document.querySelector(".hamburger");
+        const menu_bar=document.querySelector(".navbar-menu .menu-bar");
+
+        hamburger.addEventListene("click", ()=>(
+            menu_bar.classList.toggle("show")
+        ));
+
+
+    </script>
 
 </body>
 </html>
